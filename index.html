@@ -25,7 +25,7 @@
     <!-- Create a table of content -->
     <label><b>Content</b></label>
     <ol>
-        <li><a href="7.1">Introduction to the structure of an HTML document</a></li>
+        <li><a href="#7.1">Introduction to the structure of an HTML document</a></li>
         <li><a href="">HTML version information</a></li>
         <li><a href="">The HTML element</a></li>
         <li><a href="">The document head</a>
@@ -54,7 +54,29 @@
         </li>
     </ol>
     <!-- Create the 7.1 section -->
+    <section id="7.1">
+        <h2>7.1 Introduction to the structure of an HTML document</h2>
+        <p>An HTML 4 document is composed of three parts:</p>
+        <ol>
+            <li>a line containing <a href="">HTML version information</a>,</li>
+            <li>a declarative header section (delimited by the <a href="">HEAD</a> element),</li>
+            <li>a body, which contains the document's actual content. The a body may be implemented by the <a href="">BODY</a> element or the <a href="">FRAMESET</a> element.</li>
+        </ol>
+        <p>White space (spaces, newlines, tabs, and comments) may appear before or after each section. Sections 2 and 3 should be delimited by the HTML element.</p>
+        <p>Here's an example of a simple HTML document:</p>
 
+        &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//<br>
+        &nbsp;&nbsp;EN""http://www.w3.org/TR/html4/strict.dtd" &gt; <br>
+        &lt;HTML &gt; <br>
+        &lt;HEAD&gt;<br>
+        &nbsp;&nbsp;&lt;TITLE&gt; My first HTML document &lt;/TITLE &gt; <br>
+        &lt; /HEAD &gt; <br>
+        &lt;BODY&gt;<br>
+        &nbsp;&nbsp;&lt;P&gt;Hello world!<br>
+            &lt;/BODY&gt;<br>
+        &lt;/HTML&gt;<br>
+        </p>
+    </section>
     <!-- Create the 7.2 section -->
 
     <!-- Create the 7.3 section -->
