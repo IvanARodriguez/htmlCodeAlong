@@ -74,7 +74,7 @@
         <p>White space (spaces, newlines, tabs, and comments) may appear before or after each section. Sections 2 and 3 should be delimited by the HTML element.</p>
         <p>Here's an example of a simple HTML document:</p>
         <!-- &lt; , &gt;, &nbsp; used for code sample indentation -->
-        <div style="color: brown;">
+        <div style="color: brown; font-size: smaller;">
         &nbsp;&nbsp;&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN""http://www.w3.org/TR/html4/strict.dtd" &gt; <br>
         &nbsp;&nbsp;&lt;HTML &gt; <br>
@@ -88,7 +88,49 @@
         </div>
     </section>
     <!-- Create the 7.2 section -->
+    <section id="7" class="2">
+        <h2>HTML version information</h2>
+        <p>A valid HTML document declares what version of HTML is used in the document. The document type declaration names the document type definition (DTD) in use for the document (see <a href="">[ISO8879]</a>).</p>
+        <p>HTML 4.01 specifies three DTDs, so authors must include one of the following document type declarations in their documents. The DTDs vary in the elements they support.</p>
+        <ul>
+            <li><a href="">The HTML 4.01 Strict DTD</a>  includes all elements and attributes that have not been deprecated or do not appear in frameset documents. For documents that use this DTD, use this document type declaration:
+            </li> <br>
+            <div style="color: brown; font-size: smaller;">&nbsp;&nbsp;&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN""http://www.w3.org/TR/html4/strict.dtd" &gt; <br></div> <br>
 
+            <li><a href="">The HTML 4.01 Transitional DTD</a>  includes everything in the strict DTD plus deprecated elements and attributes (most of which concern visual presentation). For documents that use this DTD, use this document type declaration:</li> <br>
+
+            <div style="color: brown; font-size: smaller;">&nbsp;&nbsp;&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN""http://www.w3.org/TR/html4/loose.dtd" &gt; <br></div> <br>
+
+            <li><a href="">The HTML 4.01 Frameset DTD</a>  includes everything in the transitional DTD plus frames as well. For documents that use this DTD, use this document type declaration:
+            </li> <br>
+
+            <div style="color: brown; font-size: smaller;">&nbsp;&nbsp;&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN""http://www.w3.org/TR/html4/frameset.dtd" &gt; <br></div> <br>
+        </ul>
+        <p>The URI in each document type declaration allows user agents to download the DTD and any entity sets that are needed. The following (relative) URIs refer to DTDs and entity sets for HTML 4:</p>
+        <ul>
+            <li><a href="">"strict.dtd"</a> -- default strict DTD</li>
+            <li><a href="">"loose.dtd"</a> -- loose DTD</li>
+            <li><a href="">"frameset.dtd"</a> -- DTD for frameset documents</li>
+            <li><a href="">"HTMLlat1.ent"</a> -- Latin-1 entities </li>
+            <li><a href="">"HTMLsymbol.ent"</a> -- Symbol entities</li>
+            <li><a href="">"HTMLspecial.ent" </a> -- Special entities</li>
+        </ul>
+        <p>The binding between public identifiers and files can be specified using a catalog file following the format recommended by the Oasis Open Consortium (see <a href="">[OASISOPEN]</a>). A <a href="">sample catalog file for HTML 4.01</a>  is included at the beginning of the section on SGML reference information for HTML. The last two letters of the declaration indicate the language of the DTD. For HTML, this is always English ("EN").</p>
+
+        <div style="padding-left: 10px; color: green;">
+            <p><strong>Note.</strong> As of the 24 December version of HTML 4.01, the HTML Working Group commits to the following policy:</p>
+            <ul>
+                <li>Any changes to future HTML 4 DTDs will not invalidate documents that conform to the DTDs of the present specification. The HTML Working Group reserves the right to correct known bugs.</li>
+                <li>Software conforming to the DTDs of the present specification may ignore features of future HTML 4 DTDs that it does not recognize.</li>
+            </ul>
+            <p>This means that in a document type declaration, authors may safely use a system identifier that refers to the latest version of an HTML 4 DTD. Authors may also choose to use a system identifier that refers to a specific (dated) version of an HTML 4 DTD when validation to that particular DTD is required. W3C will make every effort to make archival documents indefinitely available at their original address in their original form.</p>
+        </div>
+        
+
+    </section>
     <!-- Create the 7.3 section -->
 
     <!-- Create the 7.4 section -->
